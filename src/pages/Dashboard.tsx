@@ -14,6 +14,9 @@ export default function Dashboard() {
   const policies = useLiveQuery(() => db.policies.toArray()) || []
   const persons = useLiveQuery(() => db.persons.toArray()) || []
   const upcomingPremiums = useLiveQuery(() => db.getUpcomingPremiums(30)) || []
+  const coverages = useLiveQuery(() => db.coverages.toArray()) || []
+  const allPremiums = useLiveQuery(() => db.premiums.toArray()) || []
+  const allBenefits = useLiveQuery(() => db.benefits.toArray()) || []
 
   // 空状态：没有数据时展示欢迎页
   const hasData = policies.length > 0 || persons.length > 0
@@ -112,7 +115,6 @@ export default function Dashboard() {
   }))
 
   // 按成员×险种 保额汇总
-  const coverages = useLiveQuery(() => db.coverages.toArray()) || []
   const memberCoverageData = persons.map(person => {
     // 该成员作为投保人或被保人的有效保单
     const relPolicies = allMainPolicies.filter(p =>
@@ -132,8 +134,6 @@ export default function Dashboard() {
   const maxMemberCoverage = Math.max(...memberCoverageData.flatMap(d => Object.values(d.categories)), 1)
 
   // 保险资产时间轴 — 年度现金流
-  const allPremiums = useLiveQuery(() => db.premiums.toArray()) || []
-  const allBenefits = useLiveQuery(() => db.benefits.toArray()) || []
 
   // 按年份归集
   const yearMap = new Map<number, { out: number; in: number; details: { type: string; amount: number }[] }>()
