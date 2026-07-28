@@ -2,6 +2,12 @@
 
 > **你的保单数据，只属于你。** 保单管家是完全运行在浏览器中的家庭保单管理工具——所有信息存储在本地 IndexedDB，不上传任何服务器。
 
+## 📸 界面预览
+
+| 家庭看板 | 保单列表 | 日历提醒 | 设置 |
+|:---:|:---:|:---:|:---:|
+| ![Dashboard](screenshots/dashboard.jpg) | ![Policies](screenshots/policies.jpg) | ![Calendar](screenshots/calendar.jpg) | ![Settings](screenshots/settings.jpg) |
+
 ---
 
 ## ✨ 功能一览
