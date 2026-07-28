@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vercel project config (contains project ID)
+.vercel
+
+# Sensitive: personal insurance data / API keys (belt and suspenders)
+保单备份_*.json
+保单管家API key.*.rtf
+保单管家*.rtf
+*.rtf
+
+# Environment variables (for future use)
+.env
+.env.local
+.env.*.local
