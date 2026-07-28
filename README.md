@@ -4,9 +4,9 @@
 
 ## 📸 界面预览
 
-| 家庭看板 | 保单列表 | 日历提醒 | 设置 |
+| 家庭成员 | 保单列表 | 日历提醒 | 设置 |
 |:---:|:---:|:---:|:---:|
-| ![Dashboard](screenshots/dashboard.jpg) | ![Policies](screenshots/policies.jpg) | ![Calendar](screenshots/calendar.jpg) | ![Settings](screenshots/settings.jpg) |
+| ![Family](screenshots/family.jpg) | ![Policies](screenshots/policies.jpg) | ![Calendar](screenshots/calendar.jpg) | ![Settings](screenshots/settings.jpg) |
 
 ---
 
