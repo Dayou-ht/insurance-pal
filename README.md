@@ -73,13 +73,13 @@ npm run build
 npm run preview
 ```
 
+### 在线体验
+
+🌐 **GitHub Pages**：[dayou-ht.github.io/insurance-pal](https://dayou-ht.github.io/insurance-pal/)
+
 ### 一键部署
 
 支持部署到 Vercel、Netlify、GitHub Pages 等静态托管平台。
-
-🌐 **在线 Demo**：[insurance-pal-lilac.vercel.app](https://insurance-pal-lilac.vercel.app)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
 ---
 
