@@ -38,7 +38,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout><Dashboard /></Layout>} />
         <Route path="/policies" element={<Layout><Policies /></Layout>} />
